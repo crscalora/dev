@@ -123,7 +123,8 @@ Can you see from the code what is happening when you add the `23` to the run com
 
 Open [labs/continuous-integration/src/HelloWorld/Program.cs](/labs/continuous-integration/src/HelloWorld/Program.cs) and make a change:
 
-- find line 13
+## EDIT
+- find line 14
 - find where it says `args[0]`
 - replace that with `args[1]`
 
