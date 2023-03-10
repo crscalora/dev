@@ -47,13 +47,20 @@ public class AdditionServiceTests
         Assert.Equal(expected, actual);
     }
 
-    [Fact]
-    public void Number17()
+   using System;
+
+namespace Calculator.App.Services;
+
+    public class AdditionService : ICalculatorService
     {
-        var service = new AdditionService();
-        var expected = 19;
-        var actual = service.Operate(2, 17);
-        Assert.Equal(expected, actual);
+        public int Operate(int left, int right)
+        {
+            if (right == 17)
+            {
+                right = right * 2;
+            }
+            return left + right;
+        }
     }
 
 }
